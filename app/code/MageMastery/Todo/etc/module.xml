@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="MageMastery_Todo" />
+</config>
+
+
+    <!--
+        ATTENZIONE
+        Per risolvere il problema "Uri not registered in urn:magento:framework:Module/etc/module.xsd"
+        eseguire il comando "bin/magento dev:urn-catalog:generate .idea/misc.xml" dove .idea/misc.xml è la path di destinazione del file misc.xml.
+    -->
