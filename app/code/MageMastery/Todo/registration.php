@@ -18,11 +18,11 @@ ComponentRegistrar::register(
 );
 
 /*
- * Come magento carica i questi componenti?
+ * Come magento carica questi componenti?
  *  1. In composer.json > autoload > files > Richiama la classe "app/etc/NonComposerComponentRegistration.php"
- *  2. Il file  app > etc > NonComposerComponentRegistration.php si occupa a caricare e registrare i componenti
- *      seguendo una lista che gli viene fornita da registration_globlist.php.
- *      Quest'ultimo file richiama la classe registration_globlist.php nella medesima cartella.
+ *  2. Il file  app > etc > NonComposerComponentRegistration.php si occupa di caricare e registrare i componenti
+ *      seguendo una lista che gli viene fornita da _registration_globlist.php_.
+ *      _NonComposerComponentRegistration.php_ richiama la classe _registration_globlist.php_ nella medesima cartella.
  *      Questo file contine una lista di file da andare a leggere.
  *          return [
  *              .....
