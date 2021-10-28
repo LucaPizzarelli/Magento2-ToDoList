@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <!-- xsi:noNamespaceSchemaLocation serve a dare i suggerimenti quando scriviamo il file  -->
+    <body> <!-- Dentro il body si va a creare la nostra costumizzazizone. -->
+        <referenceBlock name="customer_account_navigation">
+            <!-- ReferenceBlock prende in considerazione un blocco esistente definito dall'attributo name.
+                    Dentro questo blocco si vanno ad aggiungere le nostre modifiche o aggiunte.-->
+            <block
+                class="Magento\Customer\Block\Account\SortLinkInterface"
+                name="customer-account-navigation-todo-link">
+                <!-- Creiamo un nuovo blocco -->
+                <!-- class - SortLinkInterface è un Helper di Magento dependency injection configuration -->
+                <!-- name - Creiamo un nuovo blocco quindi gli assegnamo un nome univoco -->
+                    <arguments>
+                        <argument name="path" xsi:type="string">todo</argument> <!-- url -->
+                        <argument name="label" xsi:type="string" translate="true">My TODO List</argument> <!-- nome -->
+                        <argument name="sortOrder" xsi:type="number">220</argument> <!-- sortOrder -->
+                    </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
