@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard"> <!-- STANDARD - frontend / ADMIN - AdminHtml -->
+        <route id="todo" frontName="todo"> <!-- ID deve essere univoco, BEST PRACTICES vendor_name-->
+            <module name="MageMastery_Todo"/>
+        </route>
+    </router>
+</config>
